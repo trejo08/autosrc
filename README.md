@@ -10,6 +10,16 @@ Add to your `~/.zshrc`:
 source /path/to/autosrc.zsh
 ```
 
+#### Oh-My-Zsh as plugin
+```shell
+~:$ git clone git@github.com:trejo08/autosrc.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autosrc
+```
+Then add it into plugins section in your `~/.zshrc` as a new plugin:
+
+```bash
+plugins(git ruby docker autosrc)
+```
+
 #### bash
 Add to your `~/.bashrc`:
 ```
