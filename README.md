@@ -17,7 +17,7 @@ source /path/to/autosrc.zsh
 Then add it into plugins section in your `~/.zshrc` as a new plugin:
 
 ```bash
-plugins(git ruby docker autosrc)
+plugins=(git ruby docker autosrc)
 ```
 
 #### bash
