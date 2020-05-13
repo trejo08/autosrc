@@ -50,6 +50,7 @@ autosrc_call(){
     fi
 }
 
+autoload -Uz add-zsh-hook
 autosrc_run() {
     if [ "$AUTOSRC_IGNORE" -eq 1 ]; then
         return
@@ -81,7 +82,7 @@ autosrc_run() {
     fi
 }
 
-autoload -U add-zsh-hook
+# autoload -U add-zsh-hook
 add-zsh-hook chpwd autosrc_run
 
 # Call on startup as well
